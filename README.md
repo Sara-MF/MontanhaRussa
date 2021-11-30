@@ -1,6 +1,6 @@
 # MontanhaRussa
 
-O problema da montanha russa consiste em controlar processos, em que simula uma montanha russa onde pessoas entram na fila esperando a vez para entrar no carrinho. Quando há pessoas o suficiente na fila para lotar o carrinho, elas embarcar. Depois o carrinho dá a volta na montanha e retorna para embarcar novos passageiros, até que não haja mais passageiros na fila.
+O problema da montanha russa consiste em controlar processos, em que simula uma montanha russa onde pessoas entram na fila esperando a vez para entrar no carrinho. Quando há pessoas o suficiente na fila para lotar o carrinho, elas embarcam. Depois o carrinho dá a volta na montanha e retorna para embarcar novos passageiros, até que não haja mais passageiros na fila.
 
 Existem 3 casos para esse problema.
 
