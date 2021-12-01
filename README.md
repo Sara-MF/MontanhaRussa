@@ -1,37 +1,31 @@
-# MontanhaRussa
+# Descrição do problema
 
-O problema da montanha russa consiste em controlar processos, em que simula uma montanha russa onde pessoas entram na fila esperando a vez para entrar no carrinho. Quando há pessoas o suficiente na fila para lotar o carrinho, elas embarcam. Depois o carrinho dá a volta na montanha e retorna para embarcar novos passageiros, até que não haja mais passageiros na fila.
+O problema da montanha russa é descrito da seguinte forma: existe a montanha russa, que é o processo main que controlará os demais processos, e os passageiros e os carrinhos, que serão os processos concorrentes: os passageiros irão solicitar e esperar para entrar no carrinho e o carrinho terá que esperar os passageiros embarcarem e ter cautela para não colidir em outros carrinhos durante o percurso.
 
-Existem 3 casos para esse problema.
+# Casos
 
-# Caso 1
+Existem 3 casos para esse problema:
 
-Existe 1 carrinho com 4 lugares
+Caso 1: existe apenas 1 carrinho e o total de 52 passageiros
 
-São 52 passageiros no total
+Caso 2: existem 2 carrinhos e o total de 92 passageiros
 
-Os passageiros chegam na fila em um tempo aleatório entre 1 e 3 segundos
+Caso 3: existem 3 carrinhos e o total de 148 passageiros
 
-Os passageiros demoram 1 segundo para embarcarem e 1 segundo para desembarcarem
+# Restrições
 
-A volta na montanha russa dura 10 segundos
+Em todos os casos existem algumas restrições:
 
-# Caso 2
+O tempo que os passageiros chegam na fila é aleatório (entre 1 segundo e 3 segundos)
 
-Existem 2 carrinho com 4 lugares
+O carrinho só pode sair para o passeio quando tiver exatamente 4 passageiros embarcados (capacidade total do carrinho)
 
-Os carrinhos não podem bater uns nos outros durante o passeio
+O tempo que todos os passageiros levam para embarcar e desembarcar do carrinho é de 1 segundo (1 segundo para embarcar e 1 segundo para desembarcar)
 
-São 92 passageiros no total
+Cada volta na montanha russa dura 10 segundos
 
-Mesmos tempos do caso 1
+No fim de cada caso era preciso apresentar os tempos em que os passageiros ficaram esperando na fila (o tempo mínimo, o máximo e o médio) e o tempo em que os carrinhos estavam sendo utilizados (tempo das voltas que deram na montanha russa)
 
-# Caso 3
 
-Existem 3 carrinho com 4 lugares
 
-Os carrinhos não podem bater uns nos outros durante o passeio
 
-São 148 passageiros no total
-
-Mesmos tempos dos casos anteriores
