@@ -31,7 +31,7 @@ class Montanha {
 	private int[] voltas;
 	
 	// Variáveis de condição para sincronizar os processos
-	private ReentrantLock controle;         // lock que funciona como monitor (garantindo a exlusão mútua)
+	private ReentrantLock controle;         // lock que funciona como monitor (garantindo a exclusão mútua)
 	private Condition fila_embarque;        // passageiros esperando na fila de embarque
 	private Condition carrinho_embarque;    // carrinho esperando o embarque dos passageiros
 	private Condition no_carrinho;          // passageiros no carrinho
@@ -167,7 +167,7 @@ class Montanha {
 		if (passageiros_no_carro[prox_carrinho_embarque] == 4) { 
 			carrinho_disponivel[prox_carrinho_embarque] = false;
 			prox_carrinho_embarque = (prox_carrinho_embarque + 1) % n_carrinhos;
-			Thread.sleep(1000); // Tempo do embarque
+			Thread.sleep(1000); // Tempo do embarque (1 segundo)
 			System.out.println("\nOs 4 passageiros embarcaram\n");
 			carrinho_embarque.signal(); // Acorda o carrinho para o passeio
 		}
