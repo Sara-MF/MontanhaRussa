@@ -1,3 +1,8 @@
+/**
+* Código principal com todos os métodos utilizados pelos carrinhos e passageiros
+* @author Sara Melo
+*/
+
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.Random;
